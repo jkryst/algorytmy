@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class zad1 {
+public class mojeRozwiazania {
     public static void main(String[] args) {
 
         //decomposition(3);
@@ -31,6 +28,7 @@ public class zad1 {
 
 
     public static void queens(int x){
+
         int[][] board = new int[x][x];
 
         int numOfRes = 0;
@@ -61,9 +59,8 @@ public class zad1 {
 
                 board[r][col] = 0;
             }
-
         }
-            return num;
+            return false;
     }
 
     public static boolean queensIsSafe(int[][] board, int row, int col) {
